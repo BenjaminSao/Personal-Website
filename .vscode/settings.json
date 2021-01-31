@@ -1,0 +1,65 @@
+{
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.map": {
+            "when": "$(basename).map"
+        },
+        "**/*.css": {
+            "when": "$(basename).scss"
+        },
+        "**/tsconfig.tsbuildinfo": true
+    },
+    "editor.trimAutoWhitespace": false,
+    "cSpell.userWords": [
+        "Repo",
+        "comms",
+        "deserialize",
+        "nivinjoseph",
+        "strval"
+    ],
+    "typescript.updateImportsOnFileMove.enabled": "prompt",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [
+        120
+    ],
+    "cSpell.words": [
+        "Booleancheckbox",
+        "Todos",
+        "bulma",
+        "endregion",
+        "firstname",
+        "fullheight",
+        "hcentered",
+        "hoverable",
+        "hubspot",
+        "ject",
+        "lastname",
+        "marginless",
+        "mutex",
+        "opentype",
+        "paddingless",
+        "quotemark",
+        "scrollbar",
+        "semibold",
+        "taggable",
+        "templator",
+        "ticketinformation",
+        "vcentered",
+        "waypoint",
+        "waypoints",
+        "xlink",
+        "xsmall"
+    ],
+    "git.ignoreLimitWarning": true,
+}

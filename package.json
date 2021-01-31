@@ -1,0 +1,72 @@
+{
+    "name": "personal-website",
+    "version": "0.0.1",
+    "description": "Benjamin Saobuppha's Personal Website",
+    "main": "src/server/server.js",
+    "scripts": {
+        "ts-compile": "tsc -p .",
+        "ts-compile-watch": "npm run ts-compile -- -w",
+        "ts-lint": "tslint -p . -c tslint.json",
+        "ts-build": "npm run ts-compile && npm run ts-lint",
+        "webpack-build": "webpack",
+        "webpack-build-watch": "npm run webpack-build -- -w",
+        "nodemon": "nodemon --ignore client/ --ignore test/ --inspect=6101 ./src/server/server.js",
+        "predev": "npm run ts-build",
+        "dev": "concurrently \"npm:ts-compile-watch\" \"npm:nodemon\"",
+        "pretest": "npm run ts-build",
+        "test": "mocha --timeout 200000 --reporter spec --ui tdd --require ts-node/register \"./test/**/*.test.js\" || true",
+        "pretest-ci": "npm run pretest",
+        "test-ci": "mocha --reporter spec --ui tdd --require ts-node/register \"./test/**/*.test.js\"",
+        "clean-src": "find  ./src -type f -name \"*.js\" -not -path \"*/3rd-party/*\" -delete -o -name \"*.map\" -not -path \"*/3rd-party/*\" -delete && rm -f tsconfig.tsbuildinfo",
+        "clean-test": "find ./test -name \"*.js\" -delete -o -name \"*.map\" -delete && rm -f tsconfig.tsbuildinfo",
+        "build": "npm run ts-build && env=prod npm run webpack-build",
+        "start": "env=prod node ./src/server/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BenjaminSao/Personal-Website.git"
+    },
+    "author": "Benjamin Saobuppha",
+    "license": "ISC",
+    "homepage": "https://github.com/BenjaminSao/Personal-Website.git",
+    "devDependencies": {
+        "concurrently": "^5.2.0",
+        "nodemon": "^2.0.4"
+    },
+    "dependencies": {
+        "@nivinjoseph/n-app": "^3.0.32",
+        "@nivinjoseph/n-config": "^1.0.28",
+        "@nivinjoseph/n-defensive": "^1.0.33",
+        "@nivinjoseph/n-exception": "^1.0.19",
+        "@nivinjoseph/n-ext": "^1.1.19",
+        "@nivinjoseph/n-ject": "^1.1.11",
+        "@nivinjoseph/n-log": "^1.0.10",
+        "@nivinjoseph/n-sec": "^4.0.4",
+        "@nivinjoseph/n-util": "^1.0.47",
+        "@nivinjoseph/n-validate": "^1.0.28",
+        "@nivinjoseph/n-web": "^3.2.45",
+        "@types/jquery": "^3.3.35",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^12.12.17",
+        "axios": "^0.19.2",
+        "bulma": "^0.9.2",
+        "element-ui": "^2.13.1",
+        "feather-icons": "^4.28.0",
+        "firebase": "^8.2.2",
+        "jquery": "^3.5.0",
+        "material-design-icons": "^3.0.1",
+        "mocha": "^7.1.2",
+        "ts-node": "^8.9.1",
+        "tslint": "^6.1.2",
+        "typescript": "^3.8.3",
+        "typescript-tslint-plugin": "^0.5.5",
+        "webpack": "^4.42.0"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "engines": {
+        "node": "12.x",
+        "npm": "6.x"
+    }
+}
