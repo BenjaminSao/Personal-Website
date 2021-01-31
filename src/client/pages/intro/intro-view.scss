@@ -1,0 +1,34 @@
+.intro {
+    background-color: #343a40;
+    p {
+        color: white;
+    }
+
+    nav {
+        height: 10vh;
+    }
+
+    .section {
+        height: 90vh;
+        .title-logo {
+            font-size: 200px;
+        }
+        .title-desc {
+            font-size: 50px;
+        }
+        .button-box {
+            height: 15vh;
+            .next-button {
+                background-color: transparent;
+                color: white;
+                width: 30vh;
+            }
+        }
+        .square {
+            position: absolute;
+            height: 40vh;
+            width: 40vh;
+            outline: 5px solid white;
+        }
+    }
+}
