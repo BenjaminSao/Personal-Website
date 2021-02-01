@@ -767,7 +767,7 @@
         "affectsGlobalScope": false
       },
       "./src/client/components/components.ts": {
-        "version": "ec81dc1be8d869a12d24278da1bbf55f85c12df49660358ac4b64d8220eee1fb",
+        "version": "94a9bed8dc3305e9a5dd9b910a271fb87293256d5dcb73e1f1b55ea55b51026e",
         "signature": "6c29f6e86ccf97a80c969c1647e2356a64ebf3da7d29fd1eb8735e790c033d89",
         "affectsGlobalScope": false
       },
