@@ -2,7 +2,8 @@ const path = require("path");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+// const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
@@ -22,8 +23,7 @@ const moduleRules: Array<any> = [
             {
                 loader: MiniCssExtractPlugin.loader,
                 options: {
-                    hmr: isDev,
-                    reloadAll: false
+                    esModule: false
                 }
             },
             {
@@ -32,16 +32,18 @@ const moduleRules: Array<any> = [
             {
                 loader: "postcss-loader", // postcss
                 options: {
-                    plugins: () => [
-                        require("postcss-flexbugs-fixes"),
-                        autoprefixer({
-                            // browsers: [
-                            //     ">1%",
-                            //     "not ie < 9"
-                            // ],
-                            flexbox: "no-2009"
-                        })
-                    ]
+                    postcssOptions: {
+                        plugins: [
+                            "postcss-flexbugs-fixes",
+                            autoprefixer({
+                                // browsers: [
+                                //     ">1%",
+                                //     "not ie < 9"
+                                // ],
+                                flexbox: "no-2009"
+                            })
+                        ]
+                    }
                 }
             },
             {
@@ -55,8 +57,7 @@ const moduleRules: Array<any> = [
             {
                 loader: MiniCssExtractPlugin.loader,
                 options: {
-                    hmr: isDev,
-                    reloadAll: false
+                    esModule: false
                 }
             },
             {
@@ -67,10 +68,52 @@ const moduleRules: Array<any> = [
     {
         test: /\.(png|jpg|jpeg|gif)$/i,
         use: [
+            // {
+            //     loader: "file-loader",
+            //     options: {
+            //         esModule: false,
+            //         // @ts-ignore
+            //         name: (resourcePath: string, resourceQuery: string) =>
+            //         {
+            //             // `resourcePath` - `/absolute/path/to/file.js`
+            //             // `resourceQuery` - `?foo=bar`
+
+            //             if (process.env.NODE_ENV === "development")
+            //             {
+            //                 return "[path][name].[ext]";
+            //             }
+
+            //             return "[contenthash]-[name].[ext]";
+            //         }
+            //     }
+            // },
+            {
+                loader: "url-loader",
+                options: {
+                    limit: 3000,
+                    fallback: "file-loader",
+                    esModule: false,
+                    // @ts-ignore
+                    name: (resourcePath: string, resourceQuery: string) =>
+                    {
+                        // `resourcePath` - `/absolute/path/to/file.js`
+                        // `resourceQuery` - `?foo=bar`
+
+                        if (process.env.NODE_ENV === "development")
+                        {
+                            return "[path][name].[ext]";
+                        }
+
+                        return "[contenthash]-[name].[ext]";
+                        
+                        // return "[path][name].[ext]";
+                    }
+                }
+            },
             {
                 loader: "@nivinjoseph/n-app/dist/loaders/raster-image-loader.js",
                 options: {
-                    urlEncodeLimit: isDev ? 0 : 10000,
+                    // urlEncodeLimit: isDev ? 0 : 0,
                     jpegQuality: 80,
                     pngQuality: 60
                 }
@@ -174,14 +217,16 @@ const plugins = [
     new webpack.NormalModuleReplacementPlugin(/element-ui[\/\\]lib[\/\\]locale[\/\\]lang[\/\\]zh-CN/, "element-ui/lib/locale/lang/en") // for element-ui
 ];
 
-if (isDev) {
+if (isDev)
+{
     moduleRules.push({
         test: /\.js$/,
         loader: "source-map-loader",
         enforce: "pre"
     });
 }
-else {
+else
+{
     moduleRules.push({
         test: /\.js$/,
         use: {
@@ -227,16 +272,27 @@ module.exports = {
             chunks: "all"
         },
         minimizer: [
-            new UglifyJsPlugin({
-                sourceMap: false,
-                uglifyOptions: {
+            // new UglifyJsPlugin({
+            //     sourceMap: false,
+            //     uglifyOptions: {
+            //         keep_classnames: true,
+            //         keep_fnames: true,
+            //         safari10: true,
+            //         output: {
+            //             comments: false
+            //         }
+            //     }
+            // }),
+            new TerserPlugin({
+                terserOptions: {
                     keep_classnames: true,
                     keep_fnames: true,
                     safari10: true,
                     output: {
                         comments: false
                     }
-                }
+                },
+                extractComments: false
             }),
             new OptimizeCSSAssetsPlugin({})
         ]
@@ -248,7 +304,7 @@ module.exports = {
     resolve: {
         alias: {
             // https://feathericons.com/
-            // feather: path.resolve(__dirname, "node_modules/feather-icons/dist/feather-sprite.svg"),
+            feather: path.resolve(__dirname, "node_modules/feather-icons/dist/feather-sprite.svg"),
             vue: isDev ? "@nivinjoseph/vue/dist/vue.js" : "@nivinjoseph/vue/dist/vue.runtime.common.prod.js"
         }
     }

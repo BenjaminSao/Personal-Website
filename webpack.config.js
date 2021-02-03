@@ -4,7 +4,7 @@ const path = require("path");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
@@ -20,8 +20,7 @@ const moduleRules = [
             {
                 loader: MiniCssExtractPlugin.loader,
                 options: {
-                    hmr: isDev,
-                    reloadAll: false
+                    esModule: false
                 }
             },
             {
@@ -30,12 +29,14 @@ const moduleRules = [
             {
                 loader: "postcss-loader",
                 options: {
-                    plugins: () => [
-                        require("postcss-flexbugs-fixes"),
-                        autoprefixer({
-                            flexbox: "no-2009"
-                        })
-                    ]
+                    postcssOptions: {
+                        plugins: [
+                            "postcss-flexbugs-fixes",
+                            autoprefixer({
+                                flexbox: "no-2009"
+                            })
+                        ]
+                    }
                 }
             },
             {
@@ -49,8 +50,7 @@ const moduleRules = [
             {
                 loader: MiniCssExtractPlugin.loader,
                 options: {
-                    hmr: isDev,
-                    reloadAll: false
+                    esModule: false
                 }
             },
             {
@@ -62,9 +62,22 @@ const moduleRules = [
         test: /\.(png|jpg|jpeg|gif)$/i,
         use: [
             {
+                loader: "url-loader",
+                options: {
+                    limit: 3000,
+                    fallback: "file-loader",
+                    esModule: false,
+                    name: (resourcePath, resourceQuery) => {
+                        if (process.env.NODE_ENV === "development") {
+                            return "[path][name].[ext]";
+                        }
+                        return "[contenthash]-[name].[ext]";
+                    }
+                }
+            },
+            {
                 loader: "@nivinjoseph/n-app/dist/loaders/raster-image-loader.js",
                 options: {
-                    urlEncodeLimit: isDev ? 0 : 10000,
                     jpegQuality: 80,
                     pngQuality: 60
                 }
@@ -198,16 +211,16 @@ module.exports = {
             chunks: "all"
         },
         minimizer: [
-            new UglifyJsPlugin({
-                sourceMap: false,
-                uglifyOptions: {
+            new TerserPlugin({
+                terserOptions: {
                     keep_classnames: true,
                     keep_fnames: true,
                     safari10: true,
                     output: {
                         comments: false
                     }
-                }
+                },
+                extractComments: false
             }),
             new OptimizeCSSAssetsPlugin({})
         ]
@@ -218,6 +231,7 @@ module.exports = {
     plugins: plugins,
     resolve: {
         alias: {
+            feather: path.resolve(__dirname, "node_modules/feather-icons/dist/feather-sprite.svg"),
             vue: isDev ? "@nivinjoseph/vue/dist/vue.js" : "@nivinjoseph/vue/dist/vue.runtime.common.prod.js"
         }
     }

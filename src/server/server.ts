@@ -21,7 +21,7 @@ class Installer implements ComponentInstaller
     }
 }
 
-const server = new WebApp(Number.parseInt(ConfigurationManager.getConfig<number>("PORT") as any));
+const server = new WebApp(Number.parseInt(ConfigurationManager.getConfig<number>("PORT") as any), null);
 server
     .enableWebPackDevMiddleware()
     .useLogger(logger)

@@ -41,7 +41,7 @@ export class IndexController extends Controller
 
         return {
             config: {
-                apiUrl: ConfigurationManager.getConfig<string>("apiUrl")
+                // apiUrl: ConfigurationManager.getConfig<string>("apiUrl")
             }
         };
     }

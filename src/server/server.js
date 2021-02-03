@@ -14,7 +14,7 @@ class Installer {
             .registerInstance("Logger", logger);
     }
 }
-const server = new n_web_1.WebApp(Number.parseInt(n_config_1.ConfigurationManager.getConfig("PORT")));
+const server = new n_web_1.WebApp(Number.parseInt(n_config_1.ConfigurationManager.getConfig("PORT")), null);
 server
     .enableWebPackDevMiddleware()
     .useLogger(logger)

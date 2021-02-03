@@ -40,9 +40,7 @@ let IndexController = class IndexController extends n_web_1.Controller {
                     this.redirect("https" + this._callContext.href.substr(4));
             }
             return {
-                config: {
-                    apiUrl: n_config_1.ConfigurationManager.getConfig("apiUrl")
-                }
+                config: {}
             };
         });
     }
