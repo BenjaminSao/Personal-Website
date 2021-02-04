@@ -732,7 +732,7 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/intro/intro-view-model.ts": {
-        "version": "0f10542aa9debb9296564c5ba26a8f9f1cf190567701f071864c99f1cf57b6f5",
+        "version": "44e69d8310833d63c78cfb015bb34d60a2ec6df58e19bbb528e05b40c9b4fd07",
         "signature": "0961353a0e94ad6c55615451c70c82fc40131a965e2fd3918f2a3698a22d89b8",
         "affectsGlobalScope": false
       },

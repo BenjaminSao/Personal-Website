@@ -4,30 +4,59 @@
         color: white;
     }
 
-    nav {
-        height: 10vh;
-    }
-
     .section {
-        height: 90vh;
         .title-logo {
             font-size: 200px;
         }
-        .title-desc {
-            font-size: 50px;
+
+        h1 {
+            font-weight: 900;
+            font-size: 3.5em;
         }
+
+        .ml2 {
+            font-weight: 900;
+            font-size: 3.5em;
+            color: white;
+            .letter {
+                display: inline-block;
+                line-height: 1em;
+            }
+        }
+
+        .ml7 {
+            position: relative;
+            font-weight: 900;
+            font-size: 3.5em;
+            color: #fff77a;
+        }
+        .ml7 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+        .ml7 .letter {
+            transform-origin: 0 100%;
+            display: inline-block;
+            line-height: 1em;
+        }
+
         .button-box {
-            height: 15vh;
+            padding: 3rem;
             .next-button {
                 background-color: transparent;
                 color: white;
-                width: 30vh;
+                width: 15rem;
             }
         }
+
         .square {
             position: absolute;
-            height: 40vh;
-            width: 40vh;
+            height: 20rem;
+            width: 20rem;
             outline: 5px solid white;
         }
     }
