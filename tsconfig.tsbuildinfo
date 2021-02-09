@@ -727,8 +727,8 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/routes.ts": {
-        "version": "8270b0ae3966f063d57f187d90363ad3a09bc0f25b938d19361ddf382c31ee9e",
-        "signature": "b489836f2727f5f6e8285393d3faea496c46d36a2249068a44cbff577e607ae6",
+        "version": "83cbce48a935766da7e59b7ec1b6e12c6bac4f761ef85807528da0827e0beb08",
+        "signature": "50fb941d3187af92c0bdf7efdc3d909a5272954c9ddc3b7930d6c736428c3bd2",
         "affectsGlobalScope": false
       },
       "./src/client/pages/intro/intro-view-model.ts": {
@@ -736,8 +736,13 @@
         "signature": "0961353a0e94ad6c55615451c70c82fc40131a965e2fd3918f2a3698a22d89b8",
         "affectsGlobalScope": false
       },
+      "./src/client/pages/start/start-view-model.ts": {
+        "version": "72937388683e08af8425831c67450460d7d0c5c5a16a6069b65eed1981795dea",
+        "signature": "163b631c0eacd3c133a25c7663f4e472b675a2f8af7f5ddec01860b11f225296",
+        "affectsGlobalScope": false
+      },
       "./src/client/pages/pages.ts": {
-        "version": "36568fad4af9a1ec0c03a2ed8e8415423956ff8f633ce5c417a26f8af8560309",
+        "version": "bacd0475437e40ff0c97d9038597ae266b7633577752c45537f36d0e81d60e50",
         "signature": "5fafead144e4020097a089440456fbfac11793197c04fd721a656e0d2885bd45",
         "affectsGlobalScope": false
       },
@@ -1800,7 +1805,12 @@
         "./src/client/pages/routes.ts"
       ],
       "./src/client/pages/pages.ts": [
-        "./src/client/pages/intro/intro-view-model.ts"
+        "./src/client/pages/intro/intro-view-model.ts",
+        "./src/client/pages/start/start-view-model.ts"
+      ],
+      "./src/client/pages/start/start-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
+        "./src/client/pages/routes.ts"
       ],
       "./src/server/controllers/index-controller.ts": [
         "./node_modules/@nivinjoseph/n-config/dist/index.d.ts",
@@ -2433,6 +2443,9 @@
       "./src/client/pages/intro/intro-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
       ],
+      "./src/client/pages/start/start-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
+      ],
       "./src/server/controllers/index-controller.ts": [
         "./node_modules/@nivinjoseph/n-log/dist/index.d.ts",
         "./node_modules/@nivinjoseph/n-web/dist/index.d.ts"
@@ -2668,6 +2681,7 @@
       "./src/client/pages/intro/intro-view-model.ts",
       "./src/client/pages/pages.ts",
       "./src/client/pages/routes.ts",
+      "./src/client/pages/start/start-view-model.ts",
       "./src/server/controllers/index-controller.ts",
       "./src/server/server.ts",
       "./webpack.config.ts"
