@@ -747,8 +747,8 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/projects/projects-view-model.ts": {
-        "version": "d54621e48949e716053f1d8c661133ddef40e0ecfc79a5a46f4791ed11dd5e35",
-        "signature": "c8fbb428bc4db7795a5b17ca73a4d1be8c41f26da611dc03daa89074ce220ad6",
+        "version": "08ff439e36b56a2efc3926426107b35fac63fb634686aed5128f753679d6a99d",
+        "signature": "2bf264594c2eca0e4de852faf81990d5ca4613351e41a8457b6335528b7cef00",
         "affectsGlobalScope": false
       },
       "./src/client/pages/pages.ts": {
@@ -766,19 +766,19 @@
         "signature": "d8fad82ceec0c24649be234c5e758329a7072c39af83833a4420574976396f3c",
         "affectsGlobalScope": false
       },
+      "./src/client/components/project-card/project-card-view-model.ts": {
+        "version": "541a34e299b841b3a1fe1ee1bac99d4e92977442f8e92dbde8f8aa1fb162fbfc",
+        "signature": "a39677caaf3daa17fb5d7dacd3628a9265118642f77187a5d9eadafaed206262",
+        "affectsGlobalScope": false
+      },
       "./src/client/components/components.ts": {
-        "version": "d0a489f2f7e69963ecadf3946e05495f5094509c4f3392a03f481f3dac79a1e4",
+        "version": "3d417da8ad81fe60d91e0768554ecf9bc8620b61ee59b6cd91c862784d25335e",
         "signature": "6c29f6e86ccf97a80c969c1647e2356a64ebf3da7d29fd1eb8735e790c033d89",
         "affectsGlobalScope": false
       },
       "./src/client/client.ts": {
         "version": "6ddfe2621d9515838fabb0556f6120de63d93757d2dc8576733bce0533ab9d3d",
         "signature": "2414b8dfaa4cbcb476bb1601a60ecba357abf973d09fab7857654241305094d8",
-        "affectsGlobalScope": false
-      },
-      "./src/client/components/project-card/project-card-view-model.ts": {
-        "version": "b792e7e33992bbf7f7b88a55ab81ad859ec750a315d8158e73c4fcbb7e154b50",
-        "signature": "f7ef1f8e2e0508c0a540a4a037f3821e0dd11b176825854e3996679b81ae3e77",
         "affectsGlobalScope": false
       },
       "./src/client/pages/intro/intro-view-model.ts": {
@@ -1816,6 +1816,7 @@
       ],
       "./src/client/components/components.ts": [
         "./src/client/components/navbar-main/navbar-main-view-model.ts",
+        "./src/client/components/project-card/project-card-view-model.ts",
         "./src/client/components/shell/shell-view-model.ts"
       ],
       "./src/client/components/navbar-main/navbar-main-view-model.ts": [
@@ -1849,8 +1850,6 @@
       ],
       "./src/client/pages/projects/projects-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
-        "./node_modules/@nivinjoseph/n-defensive/dist/index.d.ts",
-        "./node_modules/@nivinjoseph/n-ject/dist/index.d.ts",
         "./src/client/pages/routes.ts"
       ],
       "./src/client/pages/start/start-view-model.ts": [

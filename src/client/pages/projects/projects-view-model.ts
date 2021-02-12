@@ -1,34 +1,26 @@
-import { PageViewModel, template, route, NavigationService } from "@nivinjoseph/n-app";
+import { PageViewModel, template, route } from "@nivinjoseph/n-app";
 import * as Routes from "../routes";
 import "./projects-view.scss"; // importing css for the template
-import { given } from "@nivinjoseph/n-defensive";
 // @ts-ignore
 import anime from "animejs";
 // @ts-ignore
 import ScrollReveal from "scrollreveal";
-import { inject } from "@nivinjoseph/n-ject";
 
 @template(require("./projects-view.html")) // path to the template
 @route(Routes.projects) // route that the page is going to be shown at
-@inject("NavigationService")
 export class ProjectsViewModel extends PageViewModel //
 {
-    public _navigationService: NavigationService;
+    public get imagePersonalSite(): string { return require("./image/personal-website.png"); }
+    public get imageRestaurantTodo(): string { return require("./image/restaurant-todo.png"); }
+    public get imageGrimsbyThai(): string { return require("./image/grimsby-thai.png"); }
+    public get imageThailandia(): string { return require("./image/thailandia.png"); }
+    public get imageYoungThai(): string { return require("./image/young-thai.png"); }
     
-    
-    public constructor(navigationService: NavigationService)
+    public constructor()
     {
         super();
-        
-        given(navigationService, "navigationService").ensureHasValue().ensureIsObject();
-        this._navigationService = navigationService;
     }
     
-    
-    public gotoHomepage(): void
-    {
-        this._navigationService.navigate(Routes.start);
-    }
     
     protected onMount(element: HTMLElement): void
     {

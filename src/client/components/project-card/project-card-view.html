@@ -1,3 +1,31 @@
 <div class="project-card">
+    <div class="card">
+        <div class="card-image">
+            <figure class="image">
+                <!-- Enter Image -->
+                <img :src="image" alt="Image">
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="media">
+                <div class="media-content">
+                    <!-- Enter Project Name -->
+                    <p class="title is-4">{{ title }}</p>
+                    <!-- Enter Location -->
+                    <p class="subtitle is-6">{{ location }}</p>
+                </div>
+            </div>
     
+            <div class="content">
+                <!-- Enter Description -->
+                {{ description }}
+                <br><br><strong>Tools and APIs<br></strong>
+    
+                <!-- Enter Task -->
+                <a v-for="tool in tools"><strong>{{ tool }} </strong></a>
+    
+                <br><br><small>{{ date }}</small>
+            </div>
+        </div>
+    </div>
 </div>
