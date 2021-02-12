@@ -1,0 +1,40 @@
+<div class="navbar-main">
+    <div class="navbar-wrapper">
+        <nav class="navbar is-fixed-top">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a @click="gotoHomepage" class="is-flex is-align-items-center">
+                        <figure class="image is-24x24">
+                            <img src="../../image/ben-logo.png">
+                        </figure>
+                    </a>
+                    <a role="button" class="navbar-burger" :class="{ 'is-active': navbarIsActive }" aria-label="menu" aria-expanded="false" @click="toggleNavbar">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" :class="{ 'is-active': navbarIsActive }">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <a @click="gotoAboutMe" class="has-text-black">
+                                <h1>About Me</h1>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a @click="gotoProjects" class="has-text-black"> 
+                                <h1>Projects/Awards</h1>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <h1>Experiences</h1>
+                        </div>
+                        <div class="navbar-item">
+                            <h1>Contact Me</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

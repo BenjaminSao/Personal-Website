@@ -1,17 +1,27 @@
-import { PageViewModel, template, route } from "@nivinjoseph/n-app";
+import { PageViewModel, template, route, NavigationService } from "@nivinjoseph/n-app";
 import * as Routes from "../routes";
 import "./intro-view.scss"; // importing css for the template
+import { inject } from "@nivinjoseph/n-ject";
+import { given } from "@nivinjoseph/n-defensive";
 // @ts-ignore
 import anime from "animejs";
 
 @template(require("./intro-view.html")) // path to the template
 @route(Routes.intro) // route that the page is going to be shown at
+@inject("NavigationService")
 export class IntroViewModel extends PageViewModel //
 {
-    public constructor()
+    public _navigationService: NavigationService;
+    
+    
+    public constructor(navigationService: NavigationService)
     {
         super();
+        
+        given(navigationService, "navigationService").ensureHasValue().ensureIsObject();
+        this._navigationService = navigationService;
     }
+    
     
     protected onMount(element: HTMLElement)
     {

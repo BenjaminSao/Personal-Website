@@ -8,9 +8,22 @@ import anime from "animejs";
 @route(Routes.start) // route that the page is going to be shown at
 export class StartViewModel extends PageViewModel
 {
+    private _navbarIsActive: boolean;
+    
+    public get navbarIsActive(): boolean { return this._navbarIsActive; }
+    
+    
     public constructor()
     {
         super();
+        
+        this._navbarIsActive = false;
+    }
+    
+    
+    public toggleNavbar(): void
+    {
+        this._navbarIsActive = true;
     }
     
     protected onMount(element: HTMLElement)
@@ -33,14 +46,14 @@ export class StartViewModel extends PageViewModel
         anime({
             targets: ".floating-image",
             translateY: 10,
-            direction: 'alternate',
+            direction: "alternate",
             loop: true,
-            easing: 'easeInOutSine',
-            duration: 3000
+            easing: "easeInOutSine",
+            duration: 2000
             
-        }, 500);
+        });
         
-        anime.timeline({loop: false})
+        anime.timeline({})
         .add({
             targets: ".ml2 .letter",
             scale: [4, 1],

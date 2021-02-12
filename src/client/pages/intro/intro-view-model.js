@@ -13,10 +13,14 @@ exports.IntroViewModel = void 0;
 const n_app_1 = require("@nivinjoseph/n-app");
 const Routes = require("../routes");
 require("./intro-view.scss");
+const n_ject_1 = require("@nivinjoseph/n-ject");
+const n_defensive_1 = require("@nivinjoseph/n-defensive");
 const animejs_1 = require("animejs");
 let IntroViewModel = class IntroViewModel extends n_app_1.PageViewModel {
-    constructor() {
+    constructor(navigationService) {
         super();
+        n_defensive_1.given(navigationService, "navigationService").ensureHasValue().ensureIsObject();
+        this._navigationService = navigationService;
     }
     onMount(element) {
         super.onMount(element);
@@ -62,7 +66,8 @@ let IntroViewModel = class IntroViewModel extends n_app_1.PageViewModel {
 IntroViewModel = __decorate([
     n_app_1.template(require("./intro-view.html")),
     n_app_1.route(Routes.intro),
-    __metadata("design:paramtypes", [])
+    n_ject_1.inject("NavigationService"),
+    __metadata("design:paramtypes", [Object])
 ], IntroViewModel);
 exports.IntroViewModel = IntroViewModel;
 //# sourceMappingURL=intro-view-model.js.map

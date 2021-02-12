@@ -1,0 +1,45 @@
+.about-me {
+    .ml2 
+    {
+        color: white;
+
+        .letter 
+        {
+            display: inline-block;
+            line-height: 1em;
+        }
+    }
+
+    .navbar-wrapper 
+    {
+        height: 52px;
+    }
+
+    .title-bg 
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url("./image/about-me-hero-bg.png");
+    }
+
+    .more-about-me-bg 
+    {
+        background: rgba(0, 0, 0, 0.4);
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url("./image/20190802_151605.png");
+    }
+
+    .strong-white 
+    {
+        strong 
+        {
+            color: white;
+        }
+    }
+}

@@ -1,22 +1,18 @@
 .start {
-    .ml2 
-    {
+    .ml2 {
         color: white;
-        
-        .letter 
-        {
+
+        .letter {
             display: inline-block;
             line-height: 1em;
         }
     }
 
-    .ml7 
-    {
+    .ml7 {
         position: relative;
     }
 
-    .ml7 .text-wrapper 
-    {
+    .ml7 .text-wrapper {
         position: relative;
         display: inline-block;
         padding-top: 0.2em;
@@ -24,21 +20,30 @@
         padding-bottom: 0.1em;
         overflow: hidden;
     }
-    
-    .ml7 .letter 
-    {
+
+    .ml7 .letter {
+        color: white;
         transform-origin: 0 100%;
         display: inline-block;
         line-height: 1em;
     }
 
-    .floating-image 
-    {
+    .floating-image {
         height: 300px;
 
         .ben-blue {
             width: 256px;
             height: 256px;
         }
+    }
+
+    .bg-image {
+        background: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url("https://wallpapercave.com/wp/wp3742835.jpg");
     }
 }

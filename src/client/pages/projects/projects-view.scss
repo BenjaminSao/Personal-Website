@@ -1,0 +1,27 @@
+.projects {
+    .ml2 
+    {
+        color: white;
+
+        .letter 
+        {
+            display: inline-block;
+            line-height: 1em;
+        }
+    }
+    
+    .navbar-wrapper
+    {
+        height: 52px;
+    }
+    
+    .title-bg 
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        // background-image: url("https://external-preview.redd.it/zxtbviwW9SDHhdXuaWy5_56A27khPsbIXFwQL_vQcgE.jpg?auto=webp&s=8ae8907c3c723e8b0701c7c98933e54ac3b911b0");
+        background-image: url("https://cdn.discordapp.com/attachments/752679636093108225/808754951785807892/image0-2.jpg");
+    }
+}
