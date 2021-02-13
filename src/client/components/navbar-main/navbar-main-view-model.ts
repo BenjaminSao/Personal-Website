@@ -46,4 +46,9 @@ export class NavbarMainViewModel extends ComponentViewModel
     {
         this._navigationService.navigate(route.projects);
     }
+    
+    public gotoExperiences(): void
+    {
+        this._navigationService.navigate(route.experience);
+    }
 }

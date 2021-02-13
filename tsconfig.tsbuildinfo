@@ -727,8 +727,8 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/routes.ts": {
-        "version": "f6590b8eedf9323eadbadd872d36d3d9adcbc61643b0b7c572a8ff2ad640b908",
-        "signature": "e752cde330794965396be665f9ae4e0af06fd7c275f3e7a29e86a7cd8b9cbc44",
+        "version": "a768b0026061adbcf2a0ab2fbfeaa9d2e89c06d896591b73c951908cc9ffe164",
+        "signature": "68396a5a863bf5d81a08cb906e75668278f9e059f4672a313b17c531d49b0c04",
         "affectsGlobalScope": false
       },
       "./src/client/pages/start/start-view-model.ts": {
@@ -742,17 +742,27 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/about-me/about-me-view-model.ts": {
-        "version": "c2e3b27c464c7de827100c4686badcdf87606320bf61fd16accc858335916991",
+        "version": "6629e395bb85cda2003786b597ca1c927802c3a923982cd4c6cbd9504731c41f",
         "signature": "8bcea0c8c0ca58bbcabf926310bfe15969bc4c0e6853952881b6aa07473b9b32",
         "affectsGlobalScope": false
       },
       "./src/client/pages/projects/projects-view-model.ts": {
-        "version": "08ff439e36b56a2efc3926426107b35fac63fb634686aed5128f753679d6a99d",
+        "version": "ff4f2ade782c4719388078a474d99128690afc0a37d83f0b7ec413fe6ffb9c1f",
         "signature": "2bf264594c2eca0e4de852faf81990d5ca4613351e41a8457b6335528b7cef00",
         "affectsGlobalScope": false
       },
+      "./src/client/pages/contact/contact-view-model.ts": {
+        "version": "d784b718b7e480743ff0f987ea568b4e6544da2fae500f78efff69b0356e5157",
+        "signature": "eab478fcf51dfc0b0a594c640351fed23ae0c386bedfd98e72bb32f78908e996",
+        "affectsGlobalScope": false
+      },
+      "./src/client/pages/experience/experience-view-model.ts": {
+        "version": "bce71b98a10a11ab1db7e8e8a07e81722c7d34d1891879401b4eab0d5a290ff0",
+        "signature": "2435fc99cee4abd90ca341109a6e369afa4fee29ce7510c7a8b121348a1bf00f",
+        "affectsGlobalScope": false
+      },
       "./src/client/pages/pages.ts": {
-        "version": "e3d68cd77d07e3e94dc7cade3567c2c1d389e2b3702a6ccf7b199ba094e44cb8",
+        "version": "13b28c18d91500d6382b5ae3a99c6f10a2b26064caa694290ed86bb93c42402e",
         "signature": "5fafead144e4020097a089440456fbfac11793197c04fd721a656e0d2885bd45",
         "affectsGlobalScope": false
       },
@@ -762,8 +772,8 @@
         "affectsGlobalScope": false
       },
       "./src/client/components/navbar-main/navbar-main-view-model.ts": {
-        "version": "32a70bb9cb6dbcd2836f840d04ff918ce399ece0144fc0a05714d9c74d972925",
-        "signature": "d8fad82ceec0c24649be234c5e758329a7072c39af83833a4420574976396f3c",
+        "version": "581c8ce76522494cb4beea27f32018850dc9cb48c65338245cfd5413348cd144",
+        "signature": "9ae466841785b6ed622ea2a484b5057d5af47095f00acd4938d3879f32be1fba",
         "affectsGlobalScope": false
       },
       "./src/client/components/project-card/project-card-view-model.ts": {
@@ -771,8 +781,13 @@
         "signature": "a39677caaf3daa17fb5d7dacd3628a9265118642f77187a5d9eadafaed206262",
         "affectsGlobalScope": false
       },
+      "./src/client/components/social-badges/social-badges-view-model.ts": {
+        "version": "4e8813b367e3f375fa17620e4b268a0f9c6cd33d78584fb8fbbc02272bb2c290",
+        "signature": "8cbf2d4baebbcac459c53224e2e4f03dfe15f14154bb1a806848f0ebc8474ec5",
+        "affectsGlobalScope": false
+      },
       "./src/client/components/components.ts": {
-        "version": "3d417da8ad81fe60d91e0768554ecf9bc8620b61ee59b6cd91c862784d25335e",
+        "version": "5ede2c58f794796b962c5333aab918579f7a17f261df8a4cf28271aa83d12cd6",
         "signature": "6c29f6e86ccf97a80c969c1647e2356a64ebf3da7d29fd1eb8735e790c033d89",
         "affectsGlobalScope": false
       },
@@ -1817,7 +1832,8 @@
       "./src/client/components/components.ts": [
         "./src/client/components/navbar-main/navbar-main-view-model.ts",
         "./src/client/components/project-card/project-card-view-model.ts",
-        "./src/client/components/shell/shell-view-model.ts"
+        "./src/client/components/shell/shell-view-model.ts",
+        "./src/client/components/social-badges/social-badges-view-model.ts"
       ],
       "./src/client/components/navbar-main/navbar-main-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
@@ -1831,10 +1847,23 @@
       "./src/client/components/shell/shell-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
       ],
+      "./src/client/components/social-badges/social-badges-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
+        "./node_modules/@nivinjoseph/n-defensive/dist/index.d.ts",
+        "./node_modules/@nivinjoseph/n-ject/dist/index.d.ts"
+      ],
       "./src/client/pages/about-me/about-me-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
         "./node_modules/@nivinjoseph/n-defensive/dist/index.d.ts",
         "./node_modules/@nivinjoseph/n-ject/dist/index.d.ts",
+        "./src/client/pages/routes.ts"
+      ],
+      "./src/client/pages/contact/contact-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
+        "./src/client/pages/routes.ts"
+      ],
+      "./src/client/pages/experience/experience-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
         "./src/client/pages/routes.ts"
       ],
       "./src/client/pages/intro/intro-view-model.ts": [
@@ -1845,6 +1874,8 @@
       ],
       "./src/client/pages/pages.ts": [
         "./src/client/pages/about-me/about-me-view-model.ts",
+        "./src/client/pages/contact/contact-view-model.ts",
+        "./src/client/pages/experience/experience-view-model.ts",
         "./src/client/pages/projects/projects-view-model.ts",
         "./src/client/pages/start/start-view-model.ts"
       ],
@@ -2490,7 +2521,16 @@
       "./src/client/components/shell/shell-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
       ],
+      "./src/client/components/social-badges/social-badges-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
+      ],
       "./src/client/pages/about-me/about-me-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
+      ],
+      "./src/client/pages/contact/contact-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
+      ],
+      "./src/client/pages/experience/experience-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
       ],
       "./src/client/pages/intro/intro-view-model.ts": [
@@ -2736,7 +2776,10 @@
       "./src/client/components/navbar-main/navbar-main-view-model.ts",
       "./src/client/components/project-card/project-card-view-model.ts",
       "./src/client/components/shell/shell-view-model.ts",
+      "./src/client/components/social-badges/social-badges-view-model.ts",
       "./src/client/pages/about-me/about-me-view-model.ts",
+      "./src/client/pages/contact/contact-view-model.ts",
+      "./src/client/pages/experience/experience-view-model.ts",
       "./src/client/pages/intro/intro-view-model.ts",
       "./src/client/pages/pages.ts",
       "./src/client/pages/projects/projects-view-model.ts",

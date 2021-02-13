@@ -16,6 +16,7 @@ export class ProjectsViewModel extends PageViewModel //
     public get imageThailandia(): string { return require("./image/thailandia.png"); }
     public get imageYoungThai(): string { return require("./image/young-thai.png"); }
     
+    
     public constructor()
     {
         super();
@@ -51,6 +52,13 @@ export class ProjectsViewModel extends PageViewModel //
         }).add({
             targets: ".ml2",
             easing: "easeOutExpo",
+        });
+        
+        anime({
+            targets: ".jump",
+            translateY: -10,
+            loop: true,
+            direction: "alternate"
         });
     }
 }
