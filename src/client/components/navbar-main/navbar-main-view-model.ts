@@ -51,4 +51,9 @@ export class NavbarMainViewModel extends ComponentViewModel
     {
         this._navigationService.navigate(route.experience);
     }
+    
+    public gotoContactMe(): void
+    {
+        this._navigationService.navigate(route.contact);    
+    }
 }

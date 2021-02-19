@@ -1,4 +1,16 @@
-.contact
-{
-    
+.contact {
+    .ml2 {
+        color: white;
+
+        .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    }
+
+    .contact-image {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
 }

@@ -2,6 +2,7 @@ import { ComponentViewModel, element, template, NavigationService } from "@nivin
 import { given } from "@nivinjoseph/n-defensive";
 import { inject } from "@nivinjoseph/n-ject";
 import "./social-badges-view.scss";
+import * as Routes from "../../pages/routes";
 
 @template(require("./social-badges-view.html"))
 @element("social-badges")
@@ -20,13 +21,18 @@ export class SocialBadgesViewModel extends ComponentViewModel
     }
     
     
-    public gotoLinkedin()
+    public gotoLinkedin(): void
     {
         this._navigationService.navigateSiteNewTab("https://www.linkedin.com/in/benjamin-saobuppha-01024a1a8/");
     }
     
-    public gotoInstagram()
+    public gotoInstagram(): void
     {
         this._navigationService.navigateSiteNewTab("https://www.instagram.com/saobupphaben/");
+    }
+    
+    public gotoContactMe(): void
+    {
+        this._navigationService.navigate(Routes.contact);
     }
 }

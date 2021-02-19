@@ -1,12 +1,120 @@
 <div class="contact">
-      <section class="section">
-        <div class="container">
-          <div class="heading">
-            <h1 class="title">Section</h1>
-            <h2 class="subtitle">
-              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-            </h2>
-          </div>
-        </div>
-      </section>
+    <animation>
+        <navbar-main></navbar-main>
+        <section class="hero is-danger is-fullheight-with-navbar">
+            <div class="hero-body title-bg">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column has-text-centered">
+                            <h1 class="title has-text-white ml2">Contact Me</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="is-flex is-justify-content-center is-align-items-flex-end jump">
+                <span class="icon is-large pb-5">
+                    <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <use xlink:href="~feather#chevron-down"></use>
+                    </svg>
+                </span>
+            </div>
+        </section>
+        
+        <section class="section is-medium">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column has-text-centered">
+                        <div class="reveal">
+                            <span class="icon is-large mb-5">
+                                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" height="48">
+                                    <use xlink:href="~feather#phone"></use>
+                                </svg>
+                            </span>
+                            <h1 class="is-size-5">
+                                +1 (289)-968-1900
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div class="reveal">
+                            <span class="icon is-large mb-5">
+                                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" height="48">
+                                    <use xlink:href="~feather#mail"></use>
+                                </svg>
+                            </span>
+                            <h1 class="is-size-5">
+                                ben.saobuppha@mail.utoronto.ca
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="column is-flex is-justify-content-center reveal">
+                        <figure class="image">
+                            <img src="./image/contact-form.jpg" class="contact-image is-rounded">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <section class="section is-medium has-background-light bg-image">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half reveal">
+                        <div class="notification is-info">
+                        <h1 class="title">
+                            Send Me a Message
+                        </h1>
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <div class="field">
+                                    <label class="label has-text-white">Email *</label>
+                                    <div class="control">
+                                        <input type="text" v-model="email" class="input is-rounded" placeholder="Your Email">
+                                        <p class="help is-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="field has-addons">
+                                    <div class="control">
+                                        <a class="button is-static">
+                                            Name*
+                                        </a>
+                                    </div>
+                                    <div class="control">
+                                        <input class="input is-rounded" v-model="name" type="text" placeholder="Your Name">
+                                        <p class="help is-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label has-text-white">Message* <span class="has-text-weight-light is-size-10">(500 Characters)</span></label>
+                                    <div class="control">
+                                        <textarea class="textarea is-rounded" placeholder="Your Message" v-model="message"></textarea>
+                                        <p class="help is-danger"></p>
+                                    </div>
+                                </div>
+                                <button type="button" class="button is-white has">Send</button>
+                            </fieldset>
+                        </form>
+                        
+                        </div>
+                    </div>
+                    <div class="column is-flex is-justify-content-center reveal">
+                        <figure class="image">
+                            <img src="./image/contact-form.jpg" class="contact-image is-rounded">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="section has-background-light">
+            <div class="container py-5">
+                <div class="columns">
+                    <div class="column is-flex is-justify-content-center is-align-items-center reveal">
+                        <social-badges></social-badges>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </animation>
 </div>

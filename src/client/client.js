@@ -23,8 +23,8 @@ const client = new n_app_1.ClientApp("#app", "shell")
     .useAccentColor("#93C5FC")
     .registerComponents(...components_1.components)
     .registerPages(...pages_1.pages)
-    .useAsInitialRoute(Routes.intro)
-    .useAsUnknownRoute(Routes.intro)
+    .useAsInitialRoute(Routes.start)
+    .useAsUnknownRoute(Routes.start)
     .useHistoryModeRouting();
 client.bootstrap();
 //# sourceMappingURL=client.js.map

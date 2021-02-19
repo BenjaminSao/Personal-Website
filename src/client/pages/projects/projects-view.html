@@ -1,110 +1,113 @@
 <div class="projects">
-    <navbar-main></navbar-main>
-    
-    <section class="hero is-light is-fullheight-with-navbar">
-        <div class="hero-body">
+    <animation>
+        <navbar-main></navbar-main>
+        <section class="hero is-light is-fullheight-with-navbar">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column has-text-centered">
+                            <h1 class="title has-text-black ml2">My Projects</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="is-flex is-justify-content-center is-align-items-flex-end jump">
+                <span class="icon is-large pb-5">
+                    <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <use xlink:href="~feather#chevron-down"></use>
+                    </svg>
+                </span>
+            </div>
+        </section>
+        <section class="section">
             <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column has-text-centered">
-                        <h1 class="title has-text-black ml2">My Projects</h1>
-                        <!-- <project-card :image="''" :title="''" :location="''" :description="''" :tools="[]" :date="''"></project-card> -->
-                        <!-- <project-card :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/292/767/datas/medium.gif'" :title="'Certi-Chain (Winner)'" :location="'Hack Western 7'" :description="'The counterfeiting industry is anticipated to grow to $2.8 trillion in 2022 costing 5.4 million jobs. These counterfeiting operations push real producers to bankruptcy as cheaper knockoffs with unknown origins flood the market. In order to solve this issue we developed a blockchain powered service with tags that uniquely identify products which cannot be faked or duplicated while also giving transparency. As consumers today not only value the product itself but also the story behind it.'" :tools="['JavaScript', 'Python_Flask', 'HTML', 'CSS', 'NFC', 'Blockchain', 'Jinja', 'Heroku']" :date="'December, 2020'"></project-card> -->
+                <div class="columns">
+                    <!-- first column -->
+                    <!-- <project-card :image="''" :title="''" :location="''" :description="''" :tools="[]" :date="''"></project-card> -->
+                    <div class="column">
+                        <div class="pb-5 reveal">
+                            <project-card :image="imagePersonalSite" :title="'Personal Website'" :location="''"
+                                :description="'My Personal Website created with using the n-app framework.'"
+                                :tools="['TypeScript', 'HTML', 'SCSS', 'Vue.js', 'N-App', 'Bulma', 'AnimeJS', 'ScrollReveal']"
+                                :date="'February, 2021'"></project-card>
+                        </div>
+                        <div class="pb-5 reveal">
+                            <project-card
+                                :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/292/767/datas/medium.gif'"
+                                :title="'Certi-Chain (Winner)'" :location="'Hack Western 7'"
+                                :description="'A Blockchain Powered Solution to Prevent the Counterfeiting of Products.'"
+                                :tools="['JavaScript', 'Python_Flask', 'HTML', 'CSS', 'NFC', 'Blockchain', 'Jinja', 'Heroku']"
+                                :date="'December, 2020'"></project-card>
+                        </div>
+                        <div class="pb-5 reveal">
+                            <project-card :image="imageGrimsbyThai" :title="'Grimsby Thai Website'" :location="'Grimsby Thai'"
+                                :description="'Designed and created a modern looking website using Weebly for the Restuarant, Grimsby Thai Cuisine. Displays elements such as a Home and Menu page.'"
+                                :tools="['Weebly', 'HTML', 'CSS']" :date="'2019'">
+                            </project-card>
+                        </div>
+                    </div>
+                    <!-- second column -->
+                    <div class="column">
+                        <div class="pb-5 reveal">
+                            <project-card :image="imageRestaurantTodo" :title="'Restaurant Menu Manager'"
+                                :location="'NS Labs Inc'"
+                                :description="'A simple Google Firebase powered Restaurant Menu Management Web Application.'"
+                                :tools="['TypeScript', 'HTML', 'SCSS', 'Vue.js', 'N-App', 'Bulma', 'Google Firebase']"
+                                :date="'January, 2021'"></project-card>
+                        </div>
+                        <div class="pb-5 reveal">
+                            <project-card
+                                :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/114/246/datas/medium.png'"
+                                :title="'AnimeTaro'" :location="'Hack the Northeast'"
+                                :description="'A Web Scraping powered Anime Streaming Platform finder.'"
+                                :tools="['HTML', 'CSS', 'JavaScript', 'Google Firebase']" :date="'June, 2020'">
+                            </project-card>
+                        </div>
+                        <div class="pb-5 reveal">
+                            <project-card :image="imageThailandia" :title="'Thailand Website'" :location="'Thailandia'"
+                                :description="'Designed and created a modern looking website using Weebly for the Restuarant, Thailandia. Displays elements such as a Home and Menu page.'"
+                                :tools="['Weebly', 'HTML', 'CSS']" :date="'2019'">
+                            </project-card>
+                        </div>
+                    </div>
+                    <!-- third column -->
+                    <div class="column">
+                        <div class="pb-5 reveal">
+                            <project-card
+                                :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/332/441/datas/medium.gif'"
+                                :title="'Vaccurate (Winner)'" :location="'nwHacks 2021'"
+                                :description="'Data Powered COVID-19 Vaccine Distribution.'"
+                                :tools="['HTML', 'CSS', 'JavaScript', 'Google Firebase', 'Bootstrap', 'Heroku', 'Twilio']"
+                                :date="'January, 2021'">
+                            </project-card>
+                        </div>
+                        <div class="pb-5 reveal">
+                            <project-card
+                                :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/102/796/datas/medium.png'"
+                                :title="'Journey Guide'" :location="'OpenHacks'"
+                                :description="'Google Firebase powered Fitness Planning Application'"
+                                :tools="['HTML', 'CSS', 'JavaScript', 'C#', 'Google Maps', 'FireSharp']"
+                                :date="'September, 2020'">
+                            </project-card>
+                        </div>
+                        <div class="pb-5 reveal">
+                            <project-card :image="imageYoungThai" :title="'Young Thai Website'" :location="'Young Thai'"
+                                :description="'Designed and created a modern looking website using Weebly for the Restuarant, Young Thai. Displays elements such as a Home and Menu page.'"
+                                :tools="['Weebly', 'HTML', 'CSS']" :date="'2019'">
+                            </project-card>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="is-flex is-justify-content-center is-align-items-flex-end jump">
-            <span class="icon is-large pb-5">
-                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <use xlink:href="~feather#chevron-down"></use>
-                </svg>
-            </span>
-        </div>
-    </section>
-      <section class="section">
-        <div class="container">
-          <div class="columns">
-                <!-- first column -->
-                <div class="column">
-                    <div class="pb-5 reveal">
-                        <project-card
-                            :image="imagePersonalSite"
-                            :title="'Personal Website'" :location="''" :description="'My Personal Website created with using the n-app framework.'"
-                            :tools="['TypeScript', 'HTML', 'SCSS', 'Vue.js', 'N-App', 'Bulma', 'AnimeJS', 'ScrollReveal']" :date="'February, 2021'"></project-card>
-                    </div>
-                    <div class="pb-5 reveal">
-                        <project-card
-                            :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/292/767/datas/medium.gif'"
-                            :title="'Certi-Chain (Winner)'" :location="'Hack Western 7'"
-                            :description="'A Blockchain Powered Solution to Prevent the Counterfeiting of Products.'"
-                            :tools="['JavaScript', 'Python_Flask', 'HTML', 'CSS', 'NFC', 'Blockchain', 'Jinja', 'Heroku']"
-                            :date="'December, 2020'"></project-card>
-                    </div>
-                    <div class="pb-5 reveal">
-                        <project-card :image="imageGrimsbyThai" :title="'Grimsby Thai Website'" :location="'Grimsby Thai'"
-                            :description="'Designed and created a modern looking website using Weebly for the Restuarant, Grimsby Thai Cuisine. Displays elements such as a Home and Menu page.'"
-                            :tools="['Weebly', 'HTML', 'CSS']" :date="'2019'">
-                        </project-card>
-                    </div>
-                </div>
-                <!-- second column -->
-                <div class="column">
-                    <div class="pb-5 reveal">
-                        <project-card :image="imageRestaurantTodo" :title="'Restaurant Menu Manager'" :location="'NS Labs Inc'"
-                            :description="'A simple Google Firebase powered Restaurant Menu Management Web Application.'"
-                            :tools="['TypeScript', 'HTML', 'SCSS', 'Vue.js', 'N-App', 'Bulma', 'Google Firebase']"
-                            :date="'January, 2021'"></project-card>
-                    </div>
-                    <div class="pb-5 reveal">
-                        <project-card :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/114/246/datas/medium.png'" :title="'AnimeTaro'" :location="'Hack the Northeast'"
-                            :description="'A Web Scraping powered Anime Streaming Platform finder.'"
-                            :tools="['HTML', 'CSS', 'JavaScript', 'Google Firebase']" :date="'June, 2020'">
-                        </project-card>
-                    </div>
-                    <div class="pb-5 reveal">
-                        <project-card
-                            :image="imageThailandia"
-                            :title="'Thailand Website'" :location="'Thailandia'"
-                            :description="'Designed and created a modern looking website using Weebly for the Restuarant, Thailandia. Displays elements such as a Home and Menu page.'"
-                            :tools="['Weebly', 'HTML', 'CSS']" :date="'2019'">
-                        </project-card>
-                    </div>
-                </div>
-                <!-- third column -->
-                <div class="column">
-                    <div class="pb-5 reveal">
-                        <project-card
-                            :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/332/441/datas/medium.gif'"
-                            :title="'Vaccurate (Winner)'" :location="'nwHacks 2021'"
-                            :description="'Data Powered COVID-19 Vaccine Distribution.'"
-                            :tools="['HTML', 'CSS', 'JavaScript', 'Google Firebase', 'Bootstrap', 'Heroku', 'Twilio']" :date="'January, 2021'">
-                        </project-card>
-                    </div>
-                    <div class="pb-5 reveal">
-                        <project-card
-                            :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/102/796/datas/medium.png'"
-                            :title="'Journey Guide'" :location="'OpenHacks'"
-                            :description="'Google Firebase powered Fitness Planning Application'"
-                            :tools="['HTML', 'CSS', 'JavaScript', 'C#', 'Google Maps', 'FireSharp']" :date="'September, 2020'">
-                        </project-card>
-                    </div>
-                    <div class="pb-5 reveal">
-                        <project-card :image="imageYoungThai" :title="'Young Thai Website'" :location="'Young Thai'"
-                            :description="'Designed and created a modern looking website using Weebly for the Restuarant, Young Thai. Displays elements such as a Home and Menu page.'"
-                            :tools="['Weebly', 'HTML', 'CSS']" :date="'2019'">
-                        </project-card>
+        </section>
+        <section class="section">
+            <div class="container py-5">
+                <div class="columns">
+                    <div class="column is-flex is-justify-content-center is-align-items-center reveal">
+                        <social-badges></social-badges>
                     </div>
                 </div>
             </div>
-        </div>
-      </section>
-    <section class="section">
-        <div class="container py-5">
-            <div class="columns">
-                <div class="column is-flex is-justify-content-center is-align-items-center reveal">
-                    <social-badges></social-badges>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </animation>
 </div>

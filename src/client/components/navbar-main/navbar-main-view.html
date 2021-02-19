@@ -32,11 +32,14 @@
                             </a>
                         </div>
                         <div class="navbar-item">
-                            <h1>Contact Me</h1>
+                            <a @click="gotoContactMe" class="has-text-black">
+                                <h1>Contact Me</h1>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
+    <slot></slot>
 </div>

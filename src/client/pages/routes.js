@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.experience = exports.contact = exports.projects = exports.about = exports.start = exports.intro = void 0;
-exports.intro = "/intro";
+exports.experience = exports.contact = exports.projects = exports.about = exports.start = void 0;
 exports.start = "/start";
 exports.about = "/aboutMe";
 exports.projects = "/projects";
