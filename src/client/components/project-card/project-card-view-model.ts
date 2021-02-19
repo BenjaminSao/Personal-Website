@@ -6,9 +6,5 @@ import "./project-card-view.scss";
 @bind("image", "title", "location", "description", "tools", "date")
 export class ProjectCardViewModel extends ComponentViewModel
 {
-    protected onMount(): void
-    {
-        // super.onMount();
-        console.log(this.getBound("image"));
-    }
+    
 }

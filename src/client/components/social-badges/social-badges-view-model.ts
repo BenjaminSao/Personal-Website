@@ -9,7 +9,7 @@ import * as Routes from "../../pages/routes";
 @inject("NavigationService")
 export class SocialBadgesViewModel extends ComponentViewModel
 {
-    private _navigationService: NavigationService;
+    private readonly _navigationService: NavigationService;
     
     
     public constructor(navigationService: NavigationService)

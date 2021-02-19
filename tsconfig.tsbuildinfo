@@ -172,7 +172,7 @@
         "affectsGlobalScope": false
       },
       "./webpack.config.ts": {
-        "version": "97241f00ab505e5dcf0c4eb818ad5d8133fe0040371e914d75ef03b30c547e9c",
+        "version": "911e3e0cc5fb4a70128b77f0b4d06556d91909ccbdb6f3916d859bfa79b7f098",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -732,18 +732,13 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/start/start-view-model.ts": {
-        "version": "35ef66e89aaa2f2fd3c89f1812dc82ac69f9e906c0d39ea7eed72710bfd665e1",
-        "signature": "59e8f27fdc6f8cc1218ba704d789df5b26254b1d690c38b090588118d83fc6e8",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@nivinjoseph/n-defensive/dist/index.d.ts": {
-        "version": "8d871e786bb7ab599e3e0c69d09d794ec7318be53d415deeb8eed1db37c6e979",
-        "signature": "8d871e786bb7ab599e3e0c69d09d794ec7318be53d415deeb8eed1db37c6e979",
+        "version": "d2c27bee22c0133bd693f62e5758cb9272f2276c08b518833114c265afd9bf04",
+        "signature": "163b631c0eacd3c133a25c7663f4e472b675a2f8af7f5ddec01860b11f225296",
         "affectsGlobalScope": false
       },
       "./src/client/pages/about-me/about-me-view-model.ts": {
-        "version": "ae87e574cf3e5c5011044ba8d307889887bb7181ad2770e8d4e92f430a2c7251",
-        "signature": "8bcea0c8c0ca58bbcabf926310bfe15969bc4c0e6853952881b6aa07473b9b32",
+        "version": "14e4fc83e111183205062bb6df6b3c95448c48133ce9bfe5f4e8bd8115ea8bf8",
+        "signature": "7c1d8bc0c0bb0ea52a997247dd7c2d9362b4fb44fe74a3cf43b2a00d6098b5fe",
         "affectsGlobalScope": false
       },
       "./src/client/pages/projects/projects-view-model.ts": {
@@ -757,13 +752,18 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/experience/experience-view-model.ts": {
-        "version": "b51bd15e18c4f953789cceb1664ef2c3d3728b80d486be9061f8928e6546f8ca",
-        "signature": "607a4cbd4793dd7526fde41c05656b79c54e9b7647878d90be2c0a44619c7c45",
+        "version": "8e56b0a4233fdd9352b6f2cf874c50dda1e793ce9d3bd76d3edab6b650d125b6",
+        "signature": "e66fa0b451ab112ea366434f65f81dc064af84de6f2ac74a00086aa1e621a664",
         "affectsGlobalScope": false
       },
       "./src/client/pages/pages.ts": {
         "version": "13b28c18d91500d6382b5ae3a99c6f10a2b26064caa694290ed86bb93c42402e",
         "signature": "5fafead144e4020097a089440456fbfac11793197c04fd721a656e0d2885bd45",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@nivinjoseph/n-defensive/dist/index.d.ts": {
+        "version": "8d871e786bb7ab599e3e0c69d09d794ec7318be53d415deeb8eed1db37c6e979",
+        "signature": "8d871e786bb7ab599e3e0c69d09d794ec7318be53d415deeb8eed1db37c6e979",
         "affectsGlobalScope": false
       },
       "./src/client/components/shell/shell-view-model.ts": {
@@ -772,22 +772,22 @@
         "affectsGlobalScope": false
       },
       "./src/client/components/navbar-main/navbar-main-view-model.ts": {
-        "version": "3350457c219e0555c53f58e9f310a84836607a8a22d52fe4a58566a7a5af6034",
-        "signature": "bca62115e0b9250b2e2b71a9233c663aae3fe5199b8bb7fc8ed46b58974f8177",
+        "version": "900577fe755301e6b3b6e18670691377c983b1263133350a1a5185f7d5edc752",
+        "signature": "2fa89f8f1fb8ec9b8d2ef940b8789cbe0baf98188941dacd909c4fb069c50a08",
         "affectsGlobalScope": false
       },
       "./src/client/components/project-card/project-card-view-model.ts": {
-        "version": "541a34e299b841b3a1fe1ee1bac99d4e92977442f8e92dbde8f8aa1fb162fbfc",
-        "signature": "a39677caaf3daa17fb5d7dacd3628a9265118642f77187a5d9eadafaed206262",
+        "version": "c11735746552accf73eb9ec09547092eb1e2b83eafb007016e88af300829f9a6",
+        "signature": "f7ef1f8e2e0508c0a540a4a037f3821e0dd11b176825854e3996679b81ae3e77",
         "affectsGlobalScope": false
       },
       "./src/client/components/social-badges/social-badges-view-model.ts": {
-        "version": "a0b59b2f28ece5a487b9d4d87e9af845296ad05f9a6d7d44d0e34fdeef70c9a4",
-        "signature": "110c005b7bf468da94980cacc57f12c57d66b057cc810b751e4f0720282c3921",
+        "version": "e9a2bcd85ff593b66a5cd0056f3e7097bf137fdd3abeefe16f845b098d90bb61",
+        "signature": "cf24111e3b481ed3cacdb756d2f1c3e8bbfc13dd9eabf889b91eab3dc0769349",
         "affectsGlobalScope": false
       },
       "./src/client/components/animation/animation-view-model.ts": {
-        "version": "50378f04a444b09fed19771a822fcc762950881524d88f20d73c7c301110e11d",
+        "version": "e2ea1a5a329d0e9bf0a94dd1ace3a08d33dcef04b6977118e362985191674927",
         "signature": "9e26b5b7c8f5ece13938e76a8fe6812c9b084e68053c5d35db38ad4bc4985a1b",
         "affectsGlobalScope": false
       },
@@ -1214,7 +1214,6 @@
         }
       ],
       "project": "./",
-      "watch": true,
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
@@ -1859,7 +1858,6 @@
       ],
       "./src/client/pages/about-me/about-me-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
-        "./node_modules/@nivinjoseph/n-defensive/dist/index.d.ts",
         "./node_modules/@nivinjoseph/n-ject/dist/index.d.ts",
         "./src/client/pages/routes.ts"
       ],

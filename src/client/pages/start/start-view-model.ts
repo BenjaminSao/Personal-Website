@@ -8,22 +8,9 @@ import anime from "animejs";
 @route(Routes.start) // route that the page is going to be shown at
 export class StartViewModel extends PageViewModel
 {
-    private _navbarIsActive: boolean;
-    
-    public get navbarIsActive(): boolean { return this._navbarIsActive; }
-    
-    
     public constructor()
     {
         super();
-        
-        this._navbarIsActive = false;
-    }
-    
-    
-    public toggleNavbar(): void
-    {
-        this._navbarIsActive = true;
     }
     
     protected onMount(element: HTMLElement)

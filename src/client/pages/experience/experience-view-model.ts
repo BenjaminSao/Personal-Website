@@ -7,11 +7,4 @@ import "./experience-view.scss";
 export class ExperienceViewModel extends PageViewModel
 {
     
-    
-    public constructor()
-    {
-        super();
-    }
-    
-    
 }

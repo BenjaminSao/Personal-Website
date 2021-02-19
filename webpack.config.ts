@@ -207,7 +207,7 @@ const plugins = [
     new HtmlWebpackPlugin({
         template: "src/server/controllers/index-view.html",
         filename: "index-view.html",
-        // favicon: "src/client/images/wrise-squirrel-colored.png",
+        favicon: "src/client/image/ben-logo.png",
         hash: true
     }),
     new MiniCssExtractPlugin({}),

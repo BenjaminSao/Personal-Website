@@ -9,7 +9,7 @@ import { inject } from "@nivinjoseph/n-ject";
 @inject("NavigationService")
 export class NavbarMainViewModel extends ComponentViewModel
 {
-    private _navigationService: NavigationService;
+    private readonly _navigationService: NavigationService;
     
     private _navbarIsActive: boolean;
     

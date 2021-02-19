@@ -16,18 +16,13 @@ export class AnimationViewModel extends ComponentViewModel
         super();
     }
     
+    
     protected onMount(element: HTMLElement): void
     {
         super.onMount(element);
         
-        const slideUp = {
-            distance: "100%",
-            origin: "bottom",
-        };
-        
-        ScrollReveal().reveal(".reveal", slideUp);
-        
         const textWrapperName = document.querySelector(".ml2");
+        
         if (textWrapperName && textWrapperName.textContent)
         {
             textWrapperName.innerHTML = textWrapperName.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -53,5 +48,12 @@ export class AnimationViewModel extends ComponentViewModel
             loop: true,
             direction: "alternate"
         });
+        
+        const slideUp = {
+            distance: "100%",
+            origin: "bottom",
+        };
+        
+        ScrollReveal().reveal(".reveal", slideUp);
     }
 }
