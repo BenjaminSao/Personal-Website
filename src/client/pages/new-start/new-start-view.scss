@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.new-start 
+{
+    .background-image 
+    {
+        background: rgba(0, 0, 0, 0.1);
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url("./images/hero-background.jpg");
+    }
+
+    .has-background-secondary 
+    {
+        color: white;
+        background-color: #28282b;
+    }
+
+    .has-navbar 
+    {
+        padding-top: 90px;
+    }
+
+    .fp-bottom 
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fp-next 
+    {
+        border-color: transparent transparent transparent #000000;
+        margin-right: 30px;
+    }
+
+    .fp-prev 
+    {
+        border-color: transparent #000000 transparent transparent;
+        margin-left: 30px;
+    }
+}

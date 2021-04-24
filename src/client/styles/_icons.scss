@@ -1,0 +1,94 @@
+$icon-dimensions: 1rem;	
+$icon-dimensions-small: 0.875rem;
+$icon-dimensions-medium: 1.125rem;
+$icon-dimensions-large: 3rem;
+
+
+.icon
+{
+    width: $icon-dimensions !important;
+    height: $icon-dimensions !important;
+    
+    svg
+    {
+        width: $icon-dimensions;
+        height: $icon-dimensions;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    
+    &.is-small
+    {
+        width: $icon-dimensions-small !important;
+        height: $icon-dimensions-small !important;
+        
+        svg
+        {
+            width: $icon-dimensions-small;
+            height: $icon-dimensions-small;
+        }
+    }
+    
+    &.is-medium
+    {
+        width: $icon-dimensions-medium !important;
+        height: $icon-dimensions-medium !important;
+        
+        svg
+        {
+            width: $icon-dimensions-medium;
+            height: $icon-dimensions-medium;
+        }
+    }
+    
+    &.is-large
+    {
+        width: $icon-dimensions-large !important;
+        height: $icon-dimensions-large !important;
+        
+        svg
+        {
+            width: $icon-dimensions-large;
+            height: $icon-dimensions-large;
+        }
+    }
+    
+    &.is-filled
+    {
+        svg
+        {
+            fill: currentColor;
+        }
+    }
+}
+
+
+// Material icons rule set
+/* Rules for sizing the icon. */
+.material-icons { font-size: $icon-dimensions; }
+
+.icon.is-small
+{
+    >.material-icons { font-size: $icon-dimensions-small; }
+}
+
+.icon.is-medium
+{
+    >.material-icons { font-size: $icon-dimensions-medium; }
+}
+
+.icon.is-large
+{
+    >.material-icons { font-size: $icon-dimensions-large; }
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

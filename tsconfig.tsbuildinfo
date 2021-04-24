@@ -727,8 +727,8 @@
         "affectsGlobalScope": false
       },
       "./src/client/pages/routes.ts": {
-        "version": "591024912f74085ecb3d1ed5d2c719777986fff642bda53d27965dacfa307d48",
-        "signature": "f1bc42bd19f3507d5c551bba5b5fc80081ccc3a9ef15469b489336b64fbba8e7",
+        "version": "c882c210362f463f9d25fdafc75960f6b0215173a831fad193db70658dbd9f9b",
+        "signature": "48c2285911e901fbc10311552ccb914e5d80ee50e88e964fe7151837011fee8d",
         "affectsGlobalScope": false
       },
       "./src/client/pages/start/start-view-model.ts": {
@@ -756,8 +756,13 @@
         "signature": "e66fa0b451ab112ea366434f65f81dc064af84de6f2ac74a00086aa1e621a664",
         "affectsGlobalScope": false
       },
+      "./src/client/pages/new-start/new-start-view-model.ts": {
+        "version": "e27fe4d5a6e3171736cf52b5314298d474cc384715ca7258e064cb1c2f9a63bf",
+        "signature": "63580059a80f9c976588691848637795f054a15b32f94a57cfa8179d52e1b41c",
+        "affectsGlobalScope": false
+      },
       "./src/client/pages/pages.ts": {
-        "version": "13b28c18d91500d6382b5ae3a99c6f10a2b26064caa694290ed86bb93c42402e",
+        "version": "0ed522b2f2096f3988e066c4867b96902660bccd5ba9920884876d419a296ff8",
         "signature": "5fafead144e4020097a089440456fbfac11793197c04fd721a656e0d2885bd45",
         "affectsGlobalScope": false
       },
@@ -787,7 +792,7 @@
         "affectsGlobalScope": false
       },
       "./src/client/components/animation/animation-view-model.ts": {
-        "version": "e2ea1a5a329d0e9bf0a94dd1ace3a08d33dcef04b6977118e362985191674927",
+        "version": "5a8b135256836d2229882f987dcf6c52e82b0ed352162389903fdf017b66f794",
         "signature": "9e26b5b7c8f5ece13938e76a8fe6812c9b084e68053c5d35db38ad4bc4985a1b",
         "affectsGlobalScope": false
       },
@@ -1046,6 +1051,11 @@
         "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/fullpage.js/index.d.ts": {
+        "version": "2de0849b80285bd600851cf64214fbfeaa32551da58048f6e02753ccda89c62d",
+        "signature": "2de0849b80285bd600851cf64214fbfeaa32551da58048f6e02753ccda89c62d",
+        "affectsGlobalScope": true
+      },
       "./node_modules/@types/minimatch/index.d.ts": {
         "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
         "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
@@ -1214,6 +1224,7 @@
         }
       ],
       "project": "./",
+      "watch": true,
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
@@ -1568,6 +1579,9 @@
         "./node_modules/@nivinjoseph/n-ject/dist/index.d.ts",
         "./node_modules/@nivinjoseph/n-log/dist/index.d.ts"
       ],
+      "./node_modules/@types/fullpage.js/index.d.ts": [
+        "./node_modules/@types/jquery/index.d.ts"
+      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/events.d.ts",
@@ -1869,10 +1883,15 @@
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
         "./src/client/pages/routes.ts"
       ],
+      "./src/client/pages/new-start/new-start-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts",
+        "./src/client/pages/routes.ts"
+      ],
       "./src/client/pages/pages.ts": [
         "./src/client/pages/about-me/about-me-view-model.ts",
         "./src/client/pages/contact/contact-view-model.ts",
         "./src/client/pages/experience/experience-view-model.ts",
+        "./src/client/pages/new-start/new-start-view-model.ts",
         "./src/client/pages/projects/projects-view-model.ts",
         "./src/client/pages/start/start-view-model.ts"
       ],
@@ -2256,6 +2275,9 @@
         "./node_modules/@nivinjoseph/n-ject/dist/index.d.ts",
         "./node_modules/@nivinjoseph/n-log/dist/index.d.ts"
       ],
+      "./node_modules/@types/fullpage.js/index.d.ts": [
+        "./node_modules/@types/jquery/index.d.ts"
+      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/events.d.ts",
@@ -2533,6 +2555,9 @@
       "./src/client/pages/experience/experience-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
       ],
+      "./src/client/pages/new-start/new-start-view-model.ts": [
+        "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
+      ],
       "./src/client/pages/projects/projects-view-model.ts": [
         "./node_modules/@nivinjoseph/n-app/dist/index.d.ts"
       ],
@@ -2655,6 +2680,7 @@
       "./node_modules/@nivinjoseph/n-web/dist/view.d.ts",
       "./node_modules/@nivinjoseph/n-web/dist/web-app.d.ts",
       "./node_modules/@types/anymatch/index.d.ts",
+      "./node_modules/@types/fullpage.js/index.d.ts",
       "./node_modules/@types/glob/index.d.ts",
       "./node_modules/@types/html-minifier-terser/index.d.ts",
       "./node_modules/@types/jquery/index.d.ts",
@@ -2778,6 +2804,7 @@
       "./src/client/pages/about-me/about-me-view-model.ts",
       "./src/client/pages/contact/contact-view-model.ts",
       "./src/client/pages/experience/experience-view-model.ts",
+      "./src/client/pages/new-start/new-start-view-model.ts",
       "./src/client/pages/pages.ts",
       "./src/client/pages/projects/projects-view-model.ts",
       "./src/client/pages/routes.ts",

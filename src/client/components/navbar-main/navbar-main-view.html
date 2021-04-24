@@ -1,39 +1,61 @@
 <div class="navbar-main">
     <div class="navbar-wrapper">
-        <nav class="navbar is-fixed-top">
+        <nav class="navbar has-background-black-1 is-fixed-top py-3">
             <div class="container">
                 <div class="navbar-brand">
-                    <a @click="gotoHomepage" class="is-flex is-align-items-center">
-                        <figure class="image is-24x24">
-                            <img src="../../image/ben-logo.png">
-                        </figure>
+                    <a
+                        @click="gotoHomepage"
+                        class="is-flex is-align-items-center"
+                    >
+                        <!-- <figure class="image is-48x48">
+                        <img src="../../image/ben-logo.png" />
+                    </figure> -->
+                        <h2 class=" has-text-white is-size-3 ml-5">
+                            BS<span style="color: gold;">.</span>
+                        </h2>
                     </a>
-                    <a role="button" class="navbar-burger" :class="{ 'is-active': navbarIsActive }" aria-label="menu" aria-expanded="false" @click="toggleNavbar">
+                    <a
+                        role="button"
+                        class="navbar-burger"
+                        :class="{ 'is-active': navbarIsActive }"
+                        aria-label="menu"
+                        aria-expanded="false"
+                        @click="toggleNavbar"
+                    >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div class="navbar-menu" :class="{ 'is-active': navbarIsActive }">
+                <div
+                    class="navbar-menu"
+                    :class="{ 'is-active': navbarIsActive }"
+                >
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <a @click="gotoAboutMe" class="has-text-black">
-                                <h1>About Me</h1>
+                                <h1 class="is-size-5 has-text-white">About</h1>
                             </a>
                         </div>
                         <div class="navbar-item">
-                            <a @click="gotoProjects" class="has-text-black"> 
-                                <h1>Projects/Awards</h1>
+                            <a @click="gotoProjects" class="has-text-black">
+                                <h1 class="is-size-5 has-text-white">
+                                    Projects
+                                </h1>
                             </a>
                         </div>
                         <div class="navbar-item">
                             <a @click="gotoExperiences" class="has-text-black">
-                                <h1>Experiences</h1>
+                                <h1 class="is-size-5 has-text-white">
+                                    Experiences
+                                </h1>
                             </a>
                         </div>
                         <div class="navbar-item">
                             <a @click="gotoContactMe" class="has-text-black">
-                                <h1>Contact Me</h1>
+                                <h1 class="is-size-5 has-text-white">
+                                    Contact
+                                </h1>
                             </a>
                         </div>
                     </div>

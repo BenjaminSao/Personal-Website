@@ -1,7 +1,59 @@
+@import "./_fonts.scss";
 @import "./_variables.scss";
-@import "~bulma/bulma";
 
-* 
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/components/_all";
+@import "~bulma/sass/elements/_all";
+@import "~bulma/sass/form/_all";
+@import "~bulma/sass/grid/_all";
+@import "~bulma/sass/helpers/_all";
+@import "~bulma/sass/layout/_all";
+
+@import "./typography.scss";
+@import "./icons.scss";
+@import "./spacing.scss";
+@import "./colors.scss";
+
+
+body
 {
+    font-size: $default-font-size;
+    background-color: $default-background-color;
     box-sizing: border-box;
+    color: $secondary;
+    font-family: $manrope;
+}
+
+.background-secondary
+{
+    background-color: $secondary;
+    color: white;
+}
+
+
+// TYPOGRAPHY applied to elements
+h1
+{
+    @extend .h1-style;
+}
+
+h2
+{
+    @extend .h2-style;
+}
+
+h3
+{
+    @extend .h3-style;
+}
+
+p
+{
+    @extend .p-style;
+}
+
+
+.grecaptcha-badge 
+{ 
+    visibility: hidden; 
 }

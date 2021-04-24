@@ -1,7 +1,7 @@
 <div class="project-card">
     <div class="card">
         <div class="card-image">
-            <figure class="image">
+            <figure class="image is">
                 <!-- Enter Image -->
                 <img :src="image" alt="Image">
             </figure>
@@ -16,13 +16,14 @@
                 </div>
             </div>
     
-            <div class="content">
                 <!-- Enter Description -->
-                {{ description }}
-                <br><br><strong>Tools and APIs<br></strong>
+                <p class="subtitle is-6">
+                    {{ description }}
+                </p>
+                <p class="is-size-6 has-text-weight-bold">Tools and APIs</p>
     
                 <!-- Enter Task -->
-                <a v-for="tool in tools"><strong>{{ tool }} </strong></a>
+                <a v-for="tool in tools" class="is-size-6"><strong>{{ tool }} </strong></a>
     
                 <br><br><small>{{ date }}</small>
             </div>

@@ -1,0 +1,391 @@
+<div class="new-start">
+    <navbar-main></navbar-main>
+    <div id="fullpage">
+        <div
+            class="section py-0"
+            id="section0"
+            data-centered="true"
+            data-percentage="80"
+        >
+            <div class="container container-padding">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="has-text-1 mb-3 reveal">
+                            Benjamin Saobupppha<span style="color: gold;"
+                                >.</span
+                            >
+                        </h1>
+                        <p class="subtitle reveal">Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section py-0" id="section2">
+            <div class="slide" id="slide1">
+                <div class="container container-padding">
+                    <div class="columns is-vcentered mt-5">
+                        <div class="column">
+                            <h1 class="title reveal">
+                                Hello, it's nice to meet you!
+                            </h1>
+                            <h2 class="subtitle reveal">
+                                <br />My name is
+                                <strong>Benjamin Saobuppha</strong>, you can
+                                just call me, <strong>Ben</strong>. I am a
+                                <strong>second</strong> year student studying at
+                                the <strong>University of Toronto</strong>; I am
+                                specializing in
+                                <strong>Machine Learning and Data Mining</strong
+                                >. I have a strong interest in
+                                <strong
+                                    >Machine Learning, Deep Learning and AI's,
+                                    Web Application Development, Software
+                                    Engineering, and Blockchain.</strong
+                                >
+                            </h2>
+                        </div>
+                        <div class="column reveal">
+                            <img src="image/University_of_Toronto-Logo.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="container container-padding">
+                    <div class="columns is-vcentered">
+                        <div class="column is-fullwidth">
+                            <h1 class="title">My Life</h1>
+                            <h2 class="subtitle">
+                                <br />As a person who has an
+                                <strong>everlasting love for technology</strong
+                                >, I am someone who has a
+                                <strong>passion in programming.</strong>
+                                <br /><br />My never ending
+                                <strong>love for coding</strong> allows me to
+                                reach new heights and it has enable me to grasp
+                                many concept such as
+                                <strong
+                                    >OOP, many design patterns, and
+                                    incorporating different tools and APIs into
+                                    the applications I make.</strong
+                                >
+                                <br /><br />Okay... programming aside, I like to
+                                spend my leisure time with some hobbies such as
+                                playing the <strong>piano</strong>, playing
+                                <strong>basketball</strong>, playing
+                                <strong>games</strong> and also watching
+                                <strong>anime.</strong> Also, I love to
+                                <strong>travel!</strong>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section py-0" id="section2">
+            <div class="slide" id="slide1">
+                <div class="container container-padding">
+                    <div class="has-navbar">
+                        <h1 class="mb-5">
+                            <span style="color: gold;">1</span>/3<span
+                                style="color: gold;"
+                                >.</span
+                            >
+                            Projects
+                        </h1>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="pb-5">
+                                    <project-card
+                                        :image="imagePersonalSite"
+                                        :title="'Personal Website'"
+                                        :location="''"
+                                        :description="'My Personal Website created with using the n-app framework.'"
+                                        :tools="['TypeScript', 'HTML', 'SCSS', 'Vue.js', 'N-App', 'Bulma', 'AnimeJS', 'ScrollReveal']"
+                                        :date="'February, 2021'"
+                                    ></project-card>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="pb-5 reveal">
+                                    <project-card
+                                        :image="imageRestaurantTodo"
+                                        :title="'Restaurant Menu Manager'"
+                                        :location="'NS Labs Inc'"
+                                        :description="'A simple Google Firebase powered Restaurant Menu Management Web Application.'"
+                                        :tools="['TypeScript', 'HTML', 'SCSS', 'Vue.js', 'N-App', 'Bulma', 'Google Firebase']"
+                                        :date="'January, 2021'"
+                                    ></project-card>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="pb-5 reveal">
+                                    <project-card
+                                        :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/332/441/datas/medium.gif'"
+                                        :title="'Vaccurate (Winner)'"
+                                        :location="'nwHacks 2021'"
+                                        :description="'Data Powered COVID-19 Vaccine Distribution.'"
+                                        :tools="['HTML', 'CSS', 'JavaScript', 'Google Firebase', 'Bootstrap', 'Heroku', 'Twilio']"
+                                        :date="'January, 2021'"
+                                    >
+                                    </project-card>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="container container-padding" style="height: 100%;">
+                    <div class="has-navbar">
+                        <h1 class="mb-5">
+                            <span style="color: gold;">2</span>/3<span
+                                style="color: gold;"
+                                >.</span
+                            >
+                            Projects
+                        </h1>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="pb-5">
+                                    <project-card
+                                        :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/292/767/datas/medium.gif'"
+                                        :title="'Certi-Chain (Winner)'"
+                                        :location="'Hack Western 7'"
+                                        :description="'A Blockchain Powered Solution to Prevent the Counterfeiting of Products.'"
+                                        :tools="['JavaScript', 'Python_Flask', 'HTML', 'CSS', 'NFC', 'Blockchain', 'Jinja', 'Heroku']"
+                                        :date="'December, 2020'"
+                                    ></project-card>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="pb-5">
+                                    <project-card
+                                        :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/114/246/datas/medium.png'"
+                                        :title="'AnimeTaro'"
+                                        :location="'Hack the Northeast'"
+                                        :description="'A Web Scraping powered Anime Streaming Platform finder.'"
+                                        :tools="['HTML', 'CSS', 'JavaScript', 'Google Firebase']"
+                                        :date="'June, 2020'"
+                                    >
+                                    </project-card>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="pb-5">
+                                    <project-card
+                                        :image="'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/102/796/datas/medium.png'"
+                                        :title="'Journey Guide'"
+                                        :location="'OpenHacks'"
+                                        :description="'Google Firebase powered Fitness Planning Application'"
+                                        :tools="['HTML', 'CSS', 'JavaScript', 'C#', 'Google Maps', 'FireSharp']"
+                                        :date="'September, 2020'"
+                                    >
+                                    </project-card>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class="container container-padding" style="height: 100%;">
+                    <div class="has-navbar">
+                        <h1 class="mb-5">
+                            <span style="color: gold;">3</span>/3<span
+                                style="color: gold;"
+                                >.</span
+                            >
+                            Projects
+                        </h1>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="pb-5">
+                                    <project-card
+                                        :image="imageGrimsbyThai"
+                                        :title="'Grimsby Thai Website'"
+                                        :location="'Grimsby Thai'"
+                                        :description="'Designed and created a modern looking website using Weebly for the Restuarant, Grimsby Thai Cuisine. Displays elements such as a Home and Menu page.'"
+                                        :tools="['Weebly', 'HTML', 'CSS']"
+                                        :date="'2019'"
+                                    >
+                                    </project-card>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="pb-5">
+                                    <project-card
+                                        :image="imageYoungThai"
+                                        :title="'Young Thai Website'"
+                                        :location="'Young Thai'"
+                                        :description="'Designed and created a modern looking website using Weebly for the Restuarant, Young Thai. Displays elements such as a Home and Menu page.'"
+                                        :tools="['Weebly', 'HTML', 'CSS']"
+                                        :date="'2019'"
+                                    >
+                                    </project-card>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="pb-5">
+                                    <project-card
+                                        :image="imageYoungThai"
+                                        :title="'Young Thai Website'"
+                                        :location="'Young Thai'"
+                                        :description="'Designed and created a modern looking website using Weebly for the Restuarant, Young Thai. Displays elements such as a Home and Menu page.'"
+                                        :tools="['Weebly', 'HTML', 'CSS']"
+                                        :date="'2019'"
+                                    >
+                                    </project-card>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section py-0" id="section3">
+            <div class="slide" id="slide1">
+                <div class="container container-padding" style="height: 100%;">
+                    <div class="has-navbar">
+                        <h1 class="mb-5 mt-5">
+                            Experiences
+                        </h1>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="notification is-primary">
+                                    <h1 class="title">
+                                        Education
+                                    </h1>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <div class="notification is-white">
+                                                <h1 class="title is-4">
+                                                    University of Toronto
+                                                    Scarborough
+                                                </h1>
+                                                <h1
+                                                    class="subtitle is-6 has-text-weight-semibold"
+                                                >
+                                                    Statistics with Specialist
+                                                    in Machine Learning and Data
+                                                    Mining
+                                                </h1>
+                                                <h1 class="subtitle is-6">
+                                                    Honours Bachelor of Science
+                                                    (Computer Science and
+                                                    Mathematics), Co-op
+                                                    <br /><br />Software Design,
+                                                    Theory of Computation, Data
+                                                    Structures and Algorithms
+                                                    <br /><br />cGPA: 3.2
+                                                </h1>
+                                                <p
+                                                    class="subtitle has-text-weight-light is-6"
+                                                >
+                                                    2019-Present
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="notification is-info reveal">
+                                    <h1 class="title">
+                                        Work Experience
+                                    </h1>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <div class="notification is-white">
+                                                <h1 class="title is-4">
+                                                    NS Labs Inc
+                                                </h1>
+                                                <h1
+                                                    class="subtitle is-6 has-text-weight-semibold"
+                                                >
+                                                    Software Development
+                                                    Engineer - Toronto, ON
+                                                </h1>
+                                                <p
+                                                    class="subtitle has-text-weight-light is-6"
+                                                >
+                                                    2021-Present
+                                                </p>
+                                            </div>
+                                            <div class="notification is-white">
+                                                <h1 class="title is-4">
+                                                    Thailandia Cuisine
+                                                </h1>
+                                                <h1
+                                                    class="subtitle is-6 has-text-weight-semibold"
+                                                >
+                                                    IT Technician - Welland, ON
+                                                </h1>
+                                                <h1 class="subtitle is-6">
+                                                    Conceptualized and developed
+                                                    a responsive website with
+                                                    special attention to UI/UX
+                                                    design principles gaining
+                                                    over 250+ new visitors per
+                                                    week
+                                                    <br /><br />Led and
+                                                    coordinated with colleagues
+                                                    to optimize the flow of the
+                                                    business leading to an
+                                                    increase of restaurant
+                                                    serving capacity, online
+                                                    ratings, and customer care
+                                                </h1>
+                                                <p
+                                                    class="subtitle has-text-weight-light is-6"
+                                                >
+                                                    2018-Present
+                                                </p>
+                                            </div>
+                                            <div class="notification is-white">
+                                                <h1 class="title is-4">
+                                                    Young Thai Cuisine
+                                                </h1>
+                                                <h1
+                                                    class="subtitle is-6 has-text-weight-semibold"
+                                                >
+                                                    IT Technician - Fonthill, ON
+                                                </h1>
+                                                <h1 class="subtitle is-6">
+                                                    Modernized and maintained
+                                                    the company website through
+                                                    troubleshooting and
+                                                    debugging creating a
+                                                    considerable increase in
+                                                    customer satisfaction and a
+                                                    generation of over 320 new
+                                                    views a week
+
+                                                    <br /><br />Communicated and
+                                                    built relationships with
+                                                    customers on a consistent
+                                                    basis creating a welcoming
+                                                    environment which received
+                                                    the Thai Select Award and
+                                                    Leader’s Choice Award
+                                                </h1>
+                                                <p
+                                                    class="subtitle has-text-weight-light is-6"
+                                                >
+                                                    2018-Present
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

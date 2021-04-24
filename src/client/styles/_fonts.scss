@@ -1,0 +1,14 @@
+@mixin font-face($name, $path, $weight: 400, $style: normal) {
+    @font-face {
+        font-family: $name;
+        src: url("./../fonts/"+$path+".ttf") format("truetype");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+// @include font-face(font-identifier, "path to font in fonts folder");
+@include font-face(manrope, Manrope/Manrope-Regular);
+@include font-face(manrope-light, Manrope/Manrope-Light);
+@include font-face(manrope-extra-light, Manrope/Manrope-ExtraLight);
+@include font-face(poppins, Poppins/Poppins-Regular);

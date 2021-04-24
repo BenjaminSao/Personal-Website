@@ -1,0 +1,47 @@
+$blue: #01a9f3;
+
+$white-1: #f3f3f3;
+$white-2: #e1e1e1;
+
+$black-1: #1b1b1b;
+$black-2: #141414;
+
+$primary: #f8ab3a;
+$secondary: #222;
+
+$danger: #ff456d;
+$light: #f0f3f5;
+$dark: #2f353a;
+$link: $blue;
+
+$default-background-color: white;
+
+// Fonts
+$manrope: manrope, Helvetica, Arial, sans-serif;
+$manrope-light: manrope-light, Helvetica, Arial, sans-serif;
+$manrope-extra-light: manrope-extra-light, Helvetica, Arial, sans-serif;
+$poppins: poppins, Helvetica, Arial, sans-serif;
+
+$default-font-size: 0.875rem;
+
+// Bulma vars
+$size-normal: $default-font-size;
+
+// Set primary font here
+$family-primary: $manrope;
+// $family-secondary: $campton-medium;
+
+$input-shadow: none;
+
+$default-border-radius: 6px;
+
+// Bulma vars
+$radius-small: 0;
+$radius: 0;
+$radius-large: 0;
+
+// Bulma box variables
+$box-shadow: none;
+$box-radius: 0;
+
+@import "~bulma/sass/utilities/_all";

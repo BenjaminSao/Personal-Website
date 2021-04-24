@@ -1,0 +1,77 @@
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+$min-vw: 768px;
+$max-vw: 1408px;
+// to adjust font size based on width of the window
+@mixin fluid-type($min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(
+                    #{$min-font-size} + #{strip-unit(
+                            $max-font-size - $min-font-size
+                        )} *
+                        (
+                            (100vw - #{$min-vw}) / #{strip-unit(
+                                    $max-vw - $min-vw
+                                )}
+                        )
+                );
+            }
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
+    }
+}
+
+.h1-style {
+    font-family: $manrope;
+    font-size: 3.125rem;
+    line-height: 1.2em;
+    letter-spacing: 0.5px;
+}
+
+.h2-style {
+    font-family: $manrope-light;
+    font-size: 2.5rem;
+    line-height: 1.2em;
+    letter-spacing: 0.5px;
+}
+
+.h3-style {
+    font-family: $manrope-extra-light;
+    font-size: 1.875rem;
+    line-height: 1.2em;
+    letter-spacing: 0.5px;
+}
+
+.p-style {
+    font-family: $poppins;
+    font-size: 1rem;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+}
+
+.button-text-style {
+    font-size: calc(1rem + 1px);
+    font-family: $manrope;
+}
+
+.input-text-style {
+    font-size: $default-font-size;
+}
+
+.label-text-style {
+    font-size: calc(1rem + 1px);
+    font-family: $manrope;
+    font-weight: normal;
+}

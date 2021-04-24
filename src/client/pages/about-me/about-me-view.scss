@@ -17,6 +17,8 @@
 
     .title-bg 
     {
+        background: rgba(0, 0, 0, 0.1);
+        background-blend-mode: darken;
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: center;

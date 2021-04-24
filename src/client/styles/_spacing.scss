@@ -1,0 +1,11 @@
+.container-padding 
+{
+    padding-left: 8.125rem;
+    padding-right: 8.125rem;
+
+    @include until($tablet) 
+    {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+}
